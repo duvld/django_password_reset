@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.views import PasswordResetView
 from django.urls import reverse_lazy
 from django.views import generic
 from accounts.forms import PasswordResetFormWithUsername
@@ -13,8 +14,11 @@ class SignUp(generic.CreateView):
     success_url = reverse_lazy('login')
     template_name = 'signup.html'
 
-class PasswordResetFormWithUsernameView(generic.CreateView):
+class PasswordResetFormWithUsernameView(PasswordResetView):
 	form_class = PasswordResetFormWithUsername
-	success_url = reverse_lazy('login')
-	template_name = 'signup.html'
-	
+	success_url = reverse_lazy('password_reset_done')
+	template_name = 'registration/password_reset_form.html'	
+
+	def form_valid(self, request):
+		print('-----------------')
+		print(request.get.POST)
