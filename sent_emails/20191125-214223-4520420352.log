@@ -4,18 +4,18 @@ Content-Transfer-Encoding: 7bit
 Subject: Password reset on 127.0.0.1:8000
 From: webmaster@localhost
 To: ollejna@gmail.com
-Date: Fri, 22 Nov 2019 18:34:25 -0000
+Date: Mon, 25 Nov 2019 21:42:23 -0000
 Message-ID: 
- <157444766542.34744.554555029377769313@Angelos-MacBook-Air-4.local>
+ <157471814398.22803.9085313710247804964@Angelos-MacBook-Air-4.local>
 
 
 You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
 
 Please go to the following page and choose a new password:
 
-http://127.0.0.1:8000/accounts/reset/MQ/5bn-5482a84240c41eb68724/
+http://127.0.0.1:8000/accounts/reset/Mw/5bq-37275f238a06f2388212/
 
-Your username, in case you've forgotten: angietong
+Your username, in case you've forgotten: theeeeeresa
 
 Thanks for using our site!
 

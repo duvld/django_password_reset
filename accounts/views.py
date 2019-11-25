@@ -7,6 +7,8 @@ from django.contrib.auth.views import PasswordResetView
 from django.urls import reverse_lazy
 from django.views import generic
 from accounts.forms import PasswordResetFormWithUsername
+from urllib import request
+from django.http import HttpResponseRedirect
 
 
 class SignUp(generic.CreateView):
@@ -18,7 +20,3 @@ class PasswordResetFormWithUsernameView(PasswordResetView):
 	form_class = PasswordResetFormWithUsername
 	success_url = reverse_lazy('password_reset_done')
 	template_name = 'registration/password_reset_form.html'	
-
-	def form_valid(self, request):
-		print('-----------------')
-		print(request.get.POST)
